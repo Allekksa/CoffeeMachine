@@ -2,8 +2,11 @@ body, html {
     margin: 0;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1rem;
-    color: lightgrey;
-    background-color: black;
+    color: #8B5D3B;
+    background-image: url('./img/фон_Монтажная\ область\ 1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+   
     
     
 }
@@ -11,12 +14,11 @@ body, html {
 .wrapper{
     display: flex;
     margin: 100px auto 0;
-    max-width: 800px;
-    border: 1px solid lightgrey;
+    max-width:800px;
+    border: 2px solid #8B5D3B;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(255,255,255,0.5); 
-    
-    background-color: rgba(19,19,19,0.5);
+    background-color: #d6c3b5;
     
 }
 .coffee-items{
@@ -25,20 +27,35 @@ body, html {
     justify-content:space-between;
 }
 .coffee-item{
-    min-width: 20%;
-    border: 1px solid green;
+    min-width: 30%;
+    border: 2px solid #8B5D3B;
     border-radius: 20px;
     padding: 20px;
     margin: 15px;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #8B5D3B;
+    color: #3B1C06;
+    font-weight: 500;
 }
 .coffee-item:hover{
-    background-color: lightgrey;
-    box-shadow: 0 0 20px rgba(255,255,255,0.5); 
-    color: black;
+    background-color: #8B5D3B;
+    box-shadow: 0 0 20px rgba(139,91,95,0.8); 
+    color: #3B1C06;
+    border: 2px solid #3B1C06;
 }
-
+.big{
+    width: 20%;
+    padding-right: 10px;
+    
+}
+.small{
+    width: 20%;
+    padding-right: 10px;
+}
 .left{
-    padding: 60px;
+    padding: 50px;
     flex: 1;
 }
 
@@ -48,20 +65,36 @@ body, html {
 }
 .status-bar{
     min-width: 20%;
-    padding: 20px;
-    margin: 15px;
+    padding: 15px;
+    margin: 5px 15px 15px;
     text-align: center;
-    border: 2px solid yellow;
+    border: 2px solid #8B5D3B;
     border-radius: 20px;
     
 }
-.money-input{
+
+::-webkit-progress-bar {
+    background: #D6CBC4;
+}
+::-webkit-progress-value {
+    background: #8B5D3B;
+}
+::-moz-progress-bar {
+    background: #8B5D3B;
+}
+.progress{
+    margin-top: 10px;
+    background:#8B5D3B;
+    border: 2px solid #8B5D3B; 
+    border-radius: 5px;
+}
+.money-status{
     min-width: 20%;
-    width: 75%;
+    height: 63px;
     margin: 15px;
     padding: 20px;
     border-radius: 20px;
-    border: 2px solid yellow;
+    border: 2px solid #8B5D3B;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1rem;
     color: lightgrey;
@@ -72,26 +105,35 @@ body, html {
     min-width: 20%;
     height: 63px;
     margin: 15px;
-    border: 2px solid yellow;
+    border: 2px solid #8B5D3B;
     border-radius: 20px;
 
 }
 @media screen and (max-width: 504px){
     .wrapper{
         flex-direction: column-reverse;
+        
+        margin: 50px 15px;
+        font-size: 0.8em;
     }
     .left, .right{
-        padding: 40px;
-        
-          
+        padding: 20px;
+    }
+    .coffee-item{
+        margin:5px;
     }
     
 }
-@media screen and (min-width: 500px) and  (max-width: 760px){
+@media screen and (min-width: 504px) and  (max-width: 821px){
     .left, .right{
         padding: 20px;
-        
-          
     }
-    
+    .wrapper{
+        margin: 50px 15px;
+        font-size: 0.9rem;
+    }
+    /* .coffee-item span{
+        /* min-width: 50%; */
+        */
+    }
 }
