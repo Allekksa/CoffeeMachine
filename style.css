@@ -97,8 +97,9 @@ body, html {
     border: 2px solid #8B5D3B;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1rem;
-    color: lightgrey;
+    color: rgb(104, 78, 59);
     box-sizing: border-box;
+    background-color:rgb(197, 161, 135);
 }
 
 .change, .put-money{
@@ -133,7 +134,7 @@ body, html {
         font-size: 0.9rem;
     }
     /* .coffee-item span{
-        /* min-width: 50%; */
-        */
-    }
+        /* min-width: 50%; 
+        
+    }*/
 }
